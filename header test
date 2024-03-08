@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1E0D1E;
+  color: white;
+  font-size: 30px;
+}
+
+
+.content {padding:20px;}
+
+
+.header p {
+  display: inline; 
+  margin-right: 10px; 
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Filmic Forensics</h1>
+  <p>Home</p>
+  <p>Tv Shows</p>
+  <p>Movies</p>
+  <p>Genres</p>
+  <p>New & Popular</p>
+  <p>Upcoming Releases</p>
+</div>
+
+<div class="content">
+  <h1>Reasons to watch Poor Things</h1>
+  <p>Poor Things!</p>
+  <p>Poor Things! Poor Things!</p>
+  <p>Poor Things! Poor Things! Poor Things!</p>
+</div>
+
+</body>
+</html>
