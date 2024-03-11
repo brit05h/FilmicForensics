@@ -11,11 +11,11 @@ reviews for others to see and gain
 recommendations
 
 ## In Progress
-• Project Update Presentation /br
+• Project Update Presentation <br>
 • Tic Tac Toe game tutorial <br>
 • Learning React 
 
 ## Completed
-• Project Pitches
-• Project Proposal
+• Project Pitches<br>
+• Project Proposal<br>
 • Wireframe
