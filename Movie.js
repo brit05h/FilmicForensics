@@ -19,7 +19,7 @@ function Movie() {
       <div style={{ backgroundColor: '#1E0D1E', padding: '30px' }}>
       <h1 style={{color: 'white', fontSize: '75px'}}>Trending</h1>
       {movieList.map((movie)=>(
-        <img style={{width:"291px", height:"436px", marginLeft:"10px",marginTop:"10px", borderRadius:'17px'}} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
+        <img style={{width:"400px", height:"600px", marginLeft:"10px",marginTop:"10px", borderRadius:'17px'}} src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
       ))}
     </div>
   )
