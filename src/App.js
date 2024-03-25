@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Footer from "./components/Footer";
+//import Header from "./components/header_test";
 //import Genre from './pages/genre';
 //import Main from './pages/homeMain';
 //import Oscar from './pages/oscarwin';
@@ -141,8 +143,11 @@ function App() {
           </div>
         </ul>
       </section>
-
-      <footer></footer>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </body>
   );
 }
