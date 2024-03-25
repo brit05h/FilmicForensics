@@ -1,0 +1,47 @@
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #22092C;
+}
+h1{
+  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-left: 1%;
+  font-size: 40;
+}
+.app{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+  color:white;
+  margin-top: 110%;
+  display:inline-flex;
+  font-size: 12px;
+}
+.card{
+  /*background-color: #D2364B;*/
+  margin: auto;
+  display: inline-block;
+  color: #22092C;
+  z-index: 2;
+  width: 190px;
+  height: 280px;
+  border-radius: 5%;
+  background-image: linear-gradient(#FFFFFF,#1D1D1D);
+  text-align: center;
+}
+.card:hover{
+  transform:scale(1.09);
+}
+.trend-now-list, .oscar-list, .upcoming-release-list{
+  columns: 5;
+  display: flex;
+  margin: auto;
+}
+.review-list{
+  columns: 3;
+}
+.review-card{
+  display: inline-block;
+}
