@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import './pages/MovieReviews.css';
 import Footer from "./components/Footer";
+import MovieReviews from './pages/MovieReviews';
 //import Header from "./components/header_test";
 //import Genre from './pages/genre';
 //import Main from './pages/homeMain';
@@ -12,7 +14,6 @@ function App() {
   return (
     <body className="app">
       <header></header>
-
       <section>
         <h1>Trending Now</h1>
         <ul className = 'trend-now-list'>
@@ -148,6 +149,7 @@ function App() {
       <br></br>
       <br></br>
       <Footer />
+      <MovieReviews />
     </body>
   );
 }
