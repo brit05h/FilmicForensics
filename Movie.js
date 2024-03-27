@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import './styling.css'
 const Movie = () => {
   const [movieList, setMovieList] = useState([]);
 
@@ -33,32 +33,22 @@ const Movie = () => {
 
   return (
     <div style={{ backgroundColor: '#1E0D1E', padding: '40px' }}>
-      <h1 style={{ color: 'white', fontSize: '75px' }}>Trending</h1>
+      <h1>Trending</h1>
       {movieList.map((movie, index) => (
-              // <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-
         <div key={index} style={{ position: 'relative', display: 'inline-block', justifyContent: 'center' }}>
-          <img
-            id={`image_${index}`}
-            style={{ width: "280px", height: "419px", boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.8)', 
-            marginLeft: "15px", marginTop: "15px", borderRadius: '17px', 
-            transition: `transform 0.3s` }}
-            
+          <img className='array'
+            id={`image_${index}`}            
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
           />
-          <div id={`rectangle_${index}`} style={{ 
-            position: 'absolute', top: "15px", left: "20px", width: '270px', 
-            background: 'linear-gradient(180deg, #BE3144, #872341)', opacity: 0, 
-            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.8)',
-            borderRadius: '17px', padding: '10px', boxSizing: 'border-box', transition: 'opacity 0.5s' }}>
+          <div id={`rectangle_${index}`} className='info'>
             <h2 style={{ color: 'white', marginTop: '15px', marginBottom: '0px' }}>{movie.title || movie.name} </h2>
             <h3 style={{ color: 'white', marginTop: '0px', margin: '3px'}}>
               {movie.vote_average ? `${String(movie.vote_average).substring(0, 3)}/10` : ''}
             </h3>
             <p style={{ color: 'white', marginTop: '5px' }}>
-              {movie.overview && movie.overview.length > 250 ? `${movie.overview.substring(0, 250)}...` : movie.overview}</p>
+              {movie.overview && movie.overview.length > 300 ? `${movie.overview.substring(0, 300)}...` : movie.overview}</p>
           </div>
         </div>
       ))}
