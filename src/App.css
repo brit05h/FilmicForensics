@@ -45,3 +45,80 @@ h1{
 .review-card{
   display: inline-block;
 }
+
+/* ---------------  */
+/* ---------------  */
+/* ---------------  */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.header {
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  background: #1E0D1E;
+  color: white;
+  font-size: 30px;
+  max-height: 60px;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+
+.header p {
+  display: inline;
+  margin-right: 10px;
+}
+
+#logo {
+  color: #D2364B;
+  font-weight: bold;
+  font-size: 20px;
+  width: 133px;
+  text-align: left;
+  line-height: 14px;
+  display: inline-flex;
+}
+
+.nav {
+  list-style-type: none;
+  display: inline-flex;
+
+  li {
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.actions {
+  position: relative;
+  float: inline-end;
+  top: 25px;
+  display: inline-flex;
+  i {
+    padding-left: 15x;
+    padding-right: 15px;
+  }
+
+  i.fa-magnifying-glass{
+    font-size: 15px;
+  }
+
+  i.fa-chess-rook{
+    font-size: 22px;
+  }
+}
+
+.action-icon {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
