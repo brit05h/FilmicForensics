@@ -1,0 +1,135 @@
+.review-form-popup {
+    background-color: #BE3144; /* Popup background color */
+    padding: 25px;
+    border-radius: 20px; /* Rounded corners */
+    width: 60%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; /* Font color */
+    position:sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .review-form-popup h2 {
+    margin-top: 0;
+  }
+  
+  .star-rating {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .star-rating p{
+    margin-left: .1px;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .star.filled {
+    color: #FFE600; /* Filled star color */
+  }
+
+  .headline-label input::placeholder {
+    color: white; /* Placeholder text color */
+  }
+
+  textarea::placeholder {
+    color: white; /* Placeholder text color */
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .close:hover {
+    color: #ccc;
+  }
+  
+  .movie-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .movie-poster img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  .headline-label {
+    color: rgb(255, 255, 255); /* Headline label color */
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .headline-label input {
+    background-color: rgba(255, 255, 255, 0.297); /* Transparent input background */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  textarea {
+    background-color: rgba(255, 255, 255, 0.297); /* Transparent textarea background */
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 90%;
+    height: 100px; /* Adjust textarea height */
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .spoilers {
+    margin-top: 20px;
+    color: #ccc; /* Spoilers label color */
+  }
+  
+  .spoilers label {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    color: #fff; /* Spoilers question text color */
+  }
+  
+  .spoilers input[type="radio"] {
+    padding-bottom: 20px;
+    margin-right: 5px;
+  }
+  
+  .review-title {
+    color: #fff; /* Your review text color */
+  }
+
+  .submit {
+    background-color: #8B0000; /* Dark red background color */
+    color: white; /* Font color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .submit:hover {
+    background-color: #5A0000; /* Darker shade of red on hover */
+  }

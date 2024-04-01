@@ -1,44 +1,58 @@
-/* MovieReviewsPage.css */
-
-.movie-reviews-page {
-  background-color: #22092C;
-  color: #BE3144;
-  padding: 20px;
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-.header {
-  position: relative;
-  height: 300px; /* Adjust height as needed */
-}
-
-.header-background {
+.banner img {
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+  max-height: 400px;
+  object-fit: cover;
 }
 
-.reviews-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+.review-link {
+  margin-top: 1px;
+  display: flex; /* Use flexbox for better positioning */
+  align-items: center; /* Align items vertically */
+
+}
+
+.review-link h3 {
+  margin-left: 10px; /* Add some space between the link and the heart icon */
+  margin-top: .2px;
+  font-size: 16px;
+}
+
+.heart-icon {
+  width: 20px; /* Adjust the size of the heart icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.reviews {
+  margin-top: 40px;
 }
 
 .review {
+  position: relative; /* Ensure proper positioning of the star rating */
+  background-color: rgba(128, 0, 128, 0.2); /* Transparent purple background */
   background-color: #fff;
-  padding: 20px;
   border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.username {
-  font-weight: bold;
+.review h3 {
+  margin-top: 0;
+  color: red; /* Red color for username, headline, and review */
+  margin: 0; /* Remove default margin */
 }
 
-.rating {
-  margin-top: 5px;
+h2 {
+  text-align: center;
   color: #BE3144;
+  padding:50px;
 }
 
-.review-text {
-  margin-top: 10px;
-}
+
