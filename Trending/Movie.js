@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './styling.css'
-const Movie = () => {
-  const [movieList, setMovieList] = useState([]);
+const TrendMovie = () => {
+  const [movieList, setTrendingList] = useState([]);
 
   const Trending = () => {
     fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d98b6a4a470bc2415959e8cfff5c445e")
       .then(res => res.json())
-      .then(json => setMovieList(json.results));
+      .then(json => setTrendingList(json.results));
   };
 
   useEffect(() => {
@@ -14,19 +14,19 @@ const Movie = () => {
   }, []);
 
   const handleMouseEnter = (index) => {
-    const image = document.getElementById(`image_${index}`);
+    const trend_image = document.getElementById(`trend_image_${index}`);
     const rectangle = document.getElementById(`rectangle_${index}`);
-    if (image && rectangle) {
-      image.style.transform = "scale(1.05)"; // Enlarge by 5%
+    if (trend_image && rectangle) {
+      trend_image.style.transform = "scale(1.05)"; // Enlarge by 5%
       rectangle.style.opacity = 1; // Show rectangle
     }
   };
 
   const handleMouseLeave = (index) => {
-    const image = document.getElementById(`image_${index}`);
+    const trend_image = document.getElementById(`trend_image_${index}`);
     const rectangle = document.getElementById(`rectangle_${index}`);
-    if (image && rectangle) {
-      image.style.transform = "scale(1)"; // Restore original size
+    if (trend_image && rectangle) {
+      trend_image.style.transform = "scale(1)"; // Restore original size
       rectangle.style.opacity = 0; // Hide rectangle
     }
   };
@@ -37,7 +37,7 @@ const Movie = () => {
       {movieList.map((movie, index) => (
         <div key={index} style={{ position: 'relative', display: 'inline-block', justifyContent: 'center' }}>
           <img className='array'
-            id={`image_${index}`}            
+            id={`trend_image_${index}`}            
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
@@ -57,4 +57,4 @@ const Movie = () => {
   );
 };
 
-export default Movie;
+export default TrendMovie;
