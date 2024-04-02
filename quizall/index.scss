@@ -1,7 +1,7 @@
 body {
     font-family: 'Times New Roman';
-    background-color: #1E0D1E; /* Set the background color */
-    color: #fff; /* Set the default text color to white */
+    background-color: #1E0D1E; 
+    color: #fff;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -10,8 +10,7 @@ body {
 }
 
 h2, .question-text {
-    color: #BE3144; /* Set the color for header and question text */
-}
+    color: #BE3144; 
 
 .quiz-container {
     width: 500px;
@@ -38,13 +37,13 @@ h2, .question-text {
 .active-question-no {
     font-size: 32px;
     font-weight: 500;
-    color: #1E0D1E; /* Adjust color as needed */
+    color: #1E0D1E; 
 }   
 
 .total-question {
     font-size: 16px;
     font-weight: 500;
-    color: #1E0D1E; /* Adjust color as needed */
+    color: #1E0D1E; 
 }
 
 h2 {
