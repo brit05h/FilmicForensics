@@ -28,7 +28,7 @@ const Quiz = () => {
 
     return (
       <div className="quiz-container">
-        <p className="question-text">{question.question}</p> {/* Add question-text class */}
+        <p className="question-text">{question.question}</p> 
         <div className="choices">
           {question.answers.map((answer, index) => (
             <button
