@@ -1,15 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChessRook } from "@fortawesome/free-regular-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { TbChefHat } from "react-icons/tb";
+import { IoSearch } from "react-icons/io5";
 //import "./Footer.css"; // Import the CSS file
+
 
 const Header = (props) => {
   let tasteProfileElement;
   if (props.tasteProfileOn === "true") {
-    tasteProfileElement = (
-      <FontAwesomeIcon icon={faChessRook} className="action-icon" />
-    );
+    tasteProfileElement = <TbChefHat className="action-icon" />;
   }
   return (
     <header>
@@ -24,7 +22,7 @@ const Header = (props) => {
           <li>Upcoming Releases</li>
         </ul>
         <div class="actions">
-          <FontAwesomeIcon icon={faMagnifyingGlass} className="action-icon" />
+          <IoSearch className="action-icon" />
           {tasteProfileElement}
         </div>
       </div>

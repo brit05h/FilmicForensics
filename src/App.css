@@ -108,17 +108,11 @@ body {
     padding-right: 15px;
   }
 
-  i.fa-magnifying-glass{
-    font-size: 15px;
-  }
-
-  i.fa-chess-rook{
-    font-size: 22px;
-  }
+ 
 }
 
 .action-icon {
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 20px;
     color: #fff;
 }
