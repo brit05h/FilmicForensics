@@ -5,22 +5,12 @@ import Footer from "./components/Footer";
 import MovieReviews from "./pages/MovieReviews";
 import Header from "./components/Header";
 
-//import Header from "./components/header_test";
-//import Genre from './pages/genre';
-//import Main from './pages/homeMain';
-//import Oscar from './pages/oscarwin';
-//import Trending from './pages/trending';
-
 // Main Home Page Structure
 function App() {
   return (
     <body className="app">
-      <script
-        src="https://kit.fontawesome.com/0b3addc975.js"
-        crossorigin="anonymous"
-      ></script>
-
       <Header tasteProfileOn="true" />
+
       <section>
         <h1>Trending Now</h1>
         <ul className="trend-now-list">
