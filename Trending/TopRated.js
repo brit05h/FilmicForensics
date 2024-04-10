@@ -29,8 +29,9 @@ const TRated = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#1E0D1E', padding: '40px' }}>
+    <div style={{ backgroundColor: '#1E0D1E', padding: '1px' }}>
       <h1 style={{ color: 'white', fontSize: '75px'}}>Best Rated</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       {movieLists.map((movie, indexs) => (
               // <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
 
@@ -55,6 +56,7 @@ const TRated = () => {
         </div>
       ))}
       <p style={{ color: 'white' }}>Courtesy of TMDb</p>
+      </div>
     </div>
   );
 };
