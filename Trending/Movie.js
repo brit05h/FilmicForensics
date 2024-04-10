@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import fetchTrendingMovies from './trendingData';
 import './styling.css'
 const TrendMovie = () => {
   const [movieList, setTrendingList] = useState([]);
-
-  const Trending = () => {
-    fetch("https://api.themoviedb.org/3/trending/all/day?api_key=d98b6a4a470bc2415959e8cfff5c445e")
-      .then(res => res.json())
-      .then(json => setTrendingList(json.results));
-  };
-
+  
   useEffect(() => {
-    Trending();
+    fetchTrendingMovies().then(data =>{
+      setTrendingList(data);
+    });
   }, []);
 
   const handleMouseEnter = (index) => {
@@ -32,17 +29,18 @@ const TrendMovie = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#1E0D1E', padding: '40px' }}>
+    <div style={{ backgroundColor: '#1E0D1E', padding: '1px' }}>
       <h1>Trending</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       {movieList.map((movie, index) => (
-        <div key={index} style={{ position: 'relative', display: 'inline-block', justifyContent: 'center' }}>
-          <img className='array'
+        <div key={index} style={{ position: 'relative', display: 'inline-block'}}>
+          <img className='ssarray'
             id={`trend_image_${index}`}            
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
           />
-          <div id={`rectangle_${index}`} className='info'>
+          <div id={`rectangle_${index}`} className='ssinfo'>
             <h2 style={{ color: 'white', marginTop: '15px', marginBottom: '0px' }}>{movie.title || movie.name} </h2>
             <h3 style={{ color: 'white', marginTop: '0px', margin: '3px'}}>
               {movie.vote_average ? `${String(movie.vote_average).substring(0, 3)}/10` : ''}
@@ -52,6 +50,7 @@ const TrendMovie = () => {
           </div>
         </div>
       ))}
+      </div>
       <p style={{ color: 'white' }}>Courtesy of TMDb</p>
     </div>
   );
