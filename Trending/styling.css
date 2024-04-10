@@ -11,7 +11,7 @@ h1{
     font-size: 75px;
 }
 
-.nav {
+.ssnav {
     background-color: #BE3144;
     color: white;
     display: flex;
@@ -21,7 +21,7 @@ h1{
     padding: 1rem;
 }
 
-.nav ul{
+.ssnav ul{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -30,11 +30,11 @@ h1{
     gap: 1rem;
 }
 
-.site-title{
+.sssite-title{
     font-size: 2rem;
 }
 
-.nav a{
+.ssnav a{
     color: inherit;
     text-decoration: none;
     height: 100%;
@@ -43,11 +43,11 @@ h1{
     padding: .25rem;
 }
 
-.nav li.active{
+.ssnav li.active{
     background-color: #872341;
 }
 
-.nav li:hover{
+.ssnav li:hover{
     background-color: #872341;
 }
 
@@ -86,7 +86,7 @@ h1{
 }
 
 
-.wrapper {
+.sswrapper {
     max-height: 200%;
     border: 1px;
     display: flex;
@@ -94,11 +94,11 @@ h1{
     flex-wrap: nowrap; /* Ensure items stay in a single row */
   }
   
-  .wrapper::-webkit-scrollbar {
+  .sswrapper::-webkit-scrollbar {
     width: 0;
   }
   
-  .wrapper .item {
+  .sswrapper .item {
     min-width: 110px;
     height: 110px;
     line-height: 110px;
