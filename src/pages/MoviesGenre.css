@@ -1,0 +1,72 @@
+.movgenre-card{
+    width:256px;
+    height:344px;
+    background-color:white;
+    color: red;
+    text-align: center;
+    margin: 5px;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 80px;
+    border-style: solid;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 30px;
+
+    img {
+        width:256px;
+        height:344px;
+        padding-right: 30px;
+        border-radius: 60px;
+    }
+}
+
+
+
+.movgenre-name {
+    color:  white;
+    position: relative;
+    
+    a {
+        text-decoration: none;
+        color:white;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color:#BE3144;
+    } 
+
+}
+
+.quiz-button{
+    width: 813px;
+    height: 127px;
+    background-color: white;
+    color:black;
+    border-radius: 63px;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color:#22092C;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color:#22092C;
+    } 
+}
+
+.not-sure{
+    font-size: 40px;
+    font-weight:  bold;
+    color:white;
+}
