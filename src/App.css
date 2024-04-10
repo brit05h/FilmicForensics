@@ -3,11 +3,11 @@ body {
   padding: 0;
   background-color: #22092C;
 }
+
 h1{
   padding-bottom: 1%;
   padding-top: 2%;
   padding-left: 1%;
-  font-size: 40;
 }
 .app{
   color: white;
@@ -46,16 +46,6 @@ h1{
   display: inline-block;
 }
 
-/* ---------------  */
-/* ---------------  */
-/* ---------------  */
-
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-
 .header {
   padding: 20px 20px 20px 20px;
   text-align: left;
@@ -79,23 +69,23 @@ body {
 #logo {
   color: #D2364B;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   width: 133px;
   text-align: left;
-  line-height: 14px;
+  line-height: 25px;
   display: inline-flex;
 }
 
 .nav {
   list-style-type: none;
   display: inline-flex;
+}
 
   li {
     font-size: 12px;
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
-  }
 }
 
 .actions {
@@ -103,16 +93,23 @@ body {
   float: inline-end;
   top: 25px;
   display: inline-flex;
-  i {
-    padding-left: 15x;
-    padding-right: 15px;
-  }
+}
 
- 
+i.fa-magnifying-glass{
+  font-size: 15px;
 }
 
 .action-icon {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 20px;
     color: #fff;
+}
+
+.footer {
+  margin-top: 100px; /* Adjust the margin as needed */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
 }

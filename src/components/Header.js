@@ -1,28 +1,31 @@
 import React from "react";
-import { TbChefHat } from "react-icons/tb";
-import { IoSearch } from "react-icons/io5";
-//import "./Footer.css"; // Import the CSS file
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChessRook } from "@fortawesome/free-regular-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
+//import './Header.css'; // Import the CSS file
 
 const Header = (props) => {
   let tasteProfileElement;
   if (props.tasteProfileOn === "true") {
-    tasteProfileElement = <TbChefHat className="action-icon" />;
+    tasteProfileElement = (
+      <FontAwesomeIcon icon={faChessRook} className="action-icon" />
+    );
   }
   return (
     <header>
-      <div class="header">
+      <div className="header">
         <div id="logo">Filmic Forensics</div>
-        <ul class="nav">
-          <li>Home</li>
-          <li>Tv Shows</li>
-          <li>Movies</li>
-          <li>Genres</li>
-          <li>New & Popular</li>
-          <li>Upcoming Releases</li>
+        <ul className="nav">
+          <li><Link to="./Home" className="nav-link">Home</Link></li>
+          <li><Link to="./MovieReviews" className="nav-link">Reviews</Link></li>
+          <li><Link to="./Movie" className="nav-link">Movies</Link></li>
+          <li><Link to="./Home" className="nav-link">Genres</Link></li>
+          <li><Link to="./TopRated" className="nav-link">New & Popular</Link></li>
+          <li><Link to="./Quiz" className="nav-link">Quiz</Link></li>
         </ul>
-        <div class="actions">
-          <IoSearch className="action-icon" />
+        <div className="actions">
+          <FontAwesomeIcon icon={faMagnifyingGlass} className="action-icon" />
           {tasteProfileElement}
         </div>
       </div>

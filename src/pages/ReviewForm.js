@@ -10,10 +10,10 @@ function ReviewForm({ onClose }) {
   // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Code to submit the review data to the server (e.g., via API)
-    // You can use fetch or any other method to send the review data
+
+
     console.log('Submitting review:', { headline, reviewText, spoilers });
-    // Reset form fields after submission (if needed)
+    // Reset form fields after submission 
     setHeadline('');
     setReviewText('');
     setSpoilers(false);
@@ -26,14 +26,14 @@ function ReviewForm({ onClose }) {
       <span className="close" onClick={onClose}>&times;</span>
       <div className="movie-info">
         <div className="star-rating">
-          <h2>Movie Title (YYYY)</h2>
+          <h3>Movie Title (YYYY)</h3>
           <p>YOUR RATING</p>
           {[...Array(5)].map((_, index) => (
             <span key={index} className={`star ${index < 3 ? 'filled' : ''}`}>&#9733;</span>
           ))}
         </div>
         <div className="movie-poster">
-          <img src="movie.jpeg" alt="Movie Poster" />
+          <img src="/movie.jpeg" alt="Movie Poster" />
         </div>
       </div>
       <form onSubmit={handleSubmit}>

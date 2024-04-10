@@ -1,4 +1,9 @@
-.container {
+.movieTitle h1{
+  font-size: 45px;
+  margin-bottom: auto;
+}
+
+.reviewsContainer {
   max-width: 1000px;
   margin: 20px auto;
   padding: 0 20px;
@@ -19,8 +24,9 @@
 
 .review-link h3 {
   margin-left: 10px; /* Add some space between the link and the heart icon */
-  margin-top: .2px;
+  margin-top: .02px;
   font-size: 16px;
+  color:white;
 }
 
 .heart-icon {
@@ -34,25 +40,181 @@
   margin-top: 40px;
 }
 
-.review {
-  position: relative; /* Ensure proper positioning of the star rating */
-  background-color: rgba(128, 0, 128, 0.2); /* Transparent purple background */
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
 .review h3 {
   margin-top: 0;
   color: red; /* Red color for username, headline, and review */
   margin: 0; /* Remove default margin */
 }
 
-h2 {
+.UserReviews h2 {
   text-align: center;
   color: #BE3144;
-  padding:50px;
+  margin-bottom: 70px;
 }
 
+.banner {
+  position: relative; /* Ensure relative positioning for absolute positioning of the button */
+}
 
+.trailer-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px; /* Adjusted to place the button in the lower right corner */
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.trailer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.trailer-icon img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px; /* Adjust the margin as needed */
+
+}
+
+.pagination button,
+.pagination span {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #D2364B;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pagination button:hover {
+  background-color: #BE3144;
+}
+
+/* Update dropdown button styles */
+.dropbtn {
+  background-color: #D2364B; /* Match the background color to the overall theme */
+  color: white; /* Text color */
+  padding: 5px 15px; /* Adjust padding */
+  font-size: 14px; /* Font size */
+  line-height: 1.5; /* Increase line height */
+  border: none; /* Remove border */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 3px; /* Border radius */
+}
+
+/* Hover effect */
+.dropbtn:hover {
+  background-color: #BE3144; /* Darken the background color on hover */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px; /* Add some space between dropdowns */
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Background color */
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Box shadow */
+  z-index: 1;
+  border-radius: 5px; /* Border radius */
+}
+
+/* Dropdown content items */
+.dropdown-content button {
+  color: #333; /* Text color */
+  padding: 10px 12px; /* Adjust padding */
+  font-size: 14px; /* Font size */
+  line-height: 1.5; /* Increase line height */
+  text-decoration: none; /* Remove underline */
+  display: block;
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  width: 100%;
+  text-align: left;
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Hover effect on dropdown content items */
+.dropdown-content button:hover {
+  background-color: #f9f9f9; /* Background color on hover */
+}
+
+/* Show dropdown content when hovering over dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the round bubbles */
+.user-review {
+  background-color: #fefefebd;
+  border: 2px solid #D2364B; /* Border color */
+  border-radius: 20px; /* Make it round */
+  padding: 20px; /* Add padding for content */
+  margin-bottom: 20px; /* Add some space between reviews */
+}
+
+/* Header style */
+.UserReviews h2 {
+  text-align: center;
+  color: #BE3144;
+  padding: 20px 0; /* Add padding to top and bottom */
+}
+
+/* Container for user reviews */
+.user-reviews-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow reviews to wrap to the next line */
+  justify-content: center; /* Center reviews horizontally */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .user-review {
+    width: calc(50% - 20px); /* Make each bubble take half of the container width with some margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-review {
+    width: calc(100% - 20px); /* Make each bubble take full width with some margin */
+  }
+}
+
+/* Style for the star rating */
+.rating {
+  display: inline-block;
+  font-size: 20px; /* Adjust the size of the stars */
+}
+
+/* Style for the individual star */
+.rating span {
+  color: gold; /* Color of the stars */
+}
+
+/* Adjust the spacing between stars */
+.rating span + span {
+  margin-left: 20px; /* Adjust as needed */
+}

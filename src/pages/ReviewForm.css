@@ -8,7 +8,7 @@
     position:sticky;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -50%);
     z-index: 9999;
   }
   
@@ -132,4 +132,7 @@
   
   .submit:hover {
     background-color: #5A0000; /* Darker shade of red on hover */
+  }
+  .star-rating h3{
+    color:white;
   }
