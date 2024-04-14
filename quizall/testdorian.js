@@ -414,8 +414,8 @@ export const movieQuizz = {
           content: "Yellow"
         },
         {
-          actor: 5292,
-          genre: 28,
+          actor: 103,
+          genre: 14,
           content: "Purple"
         }
       ]
