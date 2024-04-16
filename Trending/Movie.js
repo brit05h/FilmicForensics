@@ -30,7 +30,7 @@ const TrendMovie = () => {
 
   return (
     <div style={{ backgroundColor: '#1E0D1E', padding: '1px' }}>
-      <h1>Trending</h1>
+      <div className='sspheader'>Trending</div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       {movieList.map((movie, index) => (
         <div key={index} style={{ position: 'relative', display: 'inline-block'}}>
