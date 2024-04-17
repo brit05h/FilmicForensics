@@ -1,7 +1,7 @@
 body {
     font-family: 'Times New Roman';
-    background-color: #1E0D1E; /* Maintain dark purple background */
-    color: #BE3144; /* Default text color set to light red */
+    background-color: #1E0D1E; 
+    color: #BE3144; 
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -9,15 +9,15 @@ body {
     height: 100vh;
 }
 
-/* Specific styles for headers and question text */
+
 .DR-h2, .DR-question-text {
-    font-size: 5px; /* Larger font size for better readability */
-    color: #BE3144; /* Light red color maintained */
-    font-weight: bold; /* Making headers and question text bold */
+    font-size: 5px; 
+    color: #BE3144; 
+    font-weight: bold; 
 }
 
 .DR-quiz-container {
-    width: 100%; /* Adjusted to take full width to accommodate content */
+    width: 100%; 
     box-sizing: border-box;
 }
 
@@ -28,14 +28,13 @@ body {
     margin-top: 20px;
 }
 
-/* Standard button styles */
 .DR-choice-button, .DR-quiz-button {
     display: block;
     margin-bottom: 10px;
     padding: 10px 20px;
     border: none;
-    background-color: #be3144; /* Red background maintained */
-    color: #000000; /* Text color black for contrast */
+    background-color: #be3144; 
+    color: #000000; 
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
