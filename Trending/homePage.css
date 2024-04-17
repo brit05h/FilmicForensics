@@ -57,7 +57,7 @@ body {
   /* padding-top: 2%; */
   padding-left: 3%;
   font-size: 4rem;
-  font-weight: bolder;
+  font-weight: lighter;
   text-decoration: none;
   color: inherit;
 
@@ -65,7 +65,7 @@ body {
 
 .viewmore{
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: lighter;
 }
 
 .head{
