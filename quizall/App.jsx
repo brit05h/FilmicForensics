@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import Quiz from './Quiz'; // Import the Quiz component
+import Quiz from './quiz'; // Import the Quiz component
 
 const App = () => {
   return (
