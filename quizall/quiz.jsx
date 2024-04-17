@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { movieQuizz } from './testdorian'; // Ensure correct import path
-import { calculateMostCommonActorAndGenre } from './movielogic'; // Ensure correct import path
-import MovieSuggest from './moviesuggest'; // Ensure correct import path
+import { movieQuizz } from './testdorian'; 
+import { calculateMostCommonActorAndGenre } from './movielogic'; 
+import MovieSuggest from './moviesuggest'; 
 
 const Quiz = () => {
     const [answers, setAnswers] = useState([]);
