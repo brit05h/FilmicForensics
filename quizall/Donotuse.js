@@ -1,5 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes for type-checking
+//This code is no longer needed (sorry for the confusion)
+
+//import React from 'react';
+//import PropTypes from 'prop-types'; // Import PropTypes for type-checking
 
 const MovieInfo = ({ title, imageUrl, actor, genre }) => {
   return (
