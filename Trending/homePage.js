@@ -66,7 +66,7 @@ const Home = () => {
         </ul>
       </section>
 
-      <section>
+      {/* <section>
         <h1>Trending Reviews</h1>
         <ul className = 'review-list'>
           <div className = 'review-sscard'>
@@ -164,7 +164,7 @@ const Home = () => {
             <p className = 'title'>Title (Release Year)</p>
           </div>
         </ul>
-      </section>
+      </section> */}
 
     </body>
     </div>
