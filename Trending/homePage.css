@@ -1,0 +1,129 @@
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #1E0D1E;
+}
+
+.ssLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.sswrapper {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: 100%;
+  border: 1px;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap; /* Ensure items stay in a single row */
+  padding-right: 3%;
+}
+
+.sswrapper::-webkit-scrollbar {
+  height: 0.75em;
+}
+
+
+.sswrapper::-webkit-scrollbar-track {
+  opacity: 0%; /* Color of the scrollbar track */
+}
+
+.sswrapper::-webkit-scrollbar-thumb {
+  background: #BE3144; /* Color of the scrollbar thumb */
+  border-radius: 17px;
+}
+
+.sswrapper .item {
+  min-width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  background-color: #ddd;
+  margin-right: 2px;
+}
+
+
+
+.ssapp{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainhead{
+  /* padding-bottom: 1%; */
+  margin-bottom: 10px;
+  /* padding-top: 2%; */
+  padding-left: 3%;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.viewmore{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.head{
+  color: white;
+  display: flex;  
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.head a{
+  color: white;
+  text-decoration: none;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  padding-top: 2rem;
+}
+
+.head ul{
+  list-style: none;
+}
+
+.sstitle{
+  color:white;
+  margin-top: 110%;
+  display:inline-flex;
+  font-size: 12px;
+}
+.sscard{
+  /*background-color: #D2364B;*/
+  margin-left: 15px;
+  /* display: inline-block; */
+  /* color: #22092C; */
+  /* z-index: 2; */
+  min-height: 435px;
+  width: 290px;
+  border-radius: 17px;
+  background-image: linear-gradient(#FFFFFF,#1D1D1D);
+  text-align: center;
+  transition: transform 0.3s;
+
+}
+.sscard:hover{
+  transform:scale(1.05);
+}
+.sstrend-now-list, .oscar-list, .upcoming-release-list{
+  columns: 5;
+  display: flex;
+  margin: auto;
+}
+.ssreview-list{
+  columns: 3;
+}
+.ssreview-card{
+  display: inline-block;
+}
